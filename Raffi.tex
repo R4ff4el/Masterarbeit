@@ -1,0 +1,327 @@
+%\documentclass[12pt][a4paper]{article}
+\documentclass[twoside]{extarticle}
+\usepackage{setspace}
+\usepackage[latin1]{inputenc}  %verursacht komische fehler
+%\usepackage[T1]{fontenc}
+\usepackage[english]{babel} 
+%\usepackage{blindtext}
+\usepackage[top=1.5cm, bottom=2.1cm, left=2.0cm, right=2.0cm, headsep=1.4cm, includeheadfoot]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear all
+
+
+
+\usepackage{amsmath}
+\usepackage{braket}
+\usepackage[section]{placeins}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{parskip}
+%\usepackage{subfigure}
+\usepackage{subcaption}
+
+
+%\usepackage{csquotes}
+%\usepackage[backend=bibtex, sorting=none]{biblatex}
+%\addbibresource{literature.bib}
+
+
+
+\usepackage{pdfpages}
+\usepackage{hyperref} % klicken im pdf
+\usepackage{inputenc} %ermöglicht die Eingabe von Umlauten im Text, also ä, ö, ü und dem ß.
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage{caption}  %damit tabellenüberschriften nicht so an den Tabellen papen
+%\captionsetup[table]{skip=10pt} %damit tabellenüberschriften nicht so an den Tabellen papen
+%\usepackage{units} %damit die Einheiten nicht an der Zahl pappen 
+\usepackage{siunitx}
+
+
+\usepackage{nomencl}
+\renewcommand{\nomname}{List of Symbols}
+\makenomenclature
+\usepackage[titletoc, page, header]{appendix}
+
+
+
+
+%\usepackage{eso-pic}
+%\newcommand\BackgroundPic{
+%\put(-25,0){
+%\parbox[b][\paperheight]{\paperwidth}{
+%\vfill
+%\includegraphics[scale=1.1]{LogoGrau.png}
+%\vfill
+%}}}
+
+\begin{document}
+\pagenumbering{roman} 
+\begin{titlepage}
+%\thispagestyle{empty}
+\begin{center}
+%\AddToShipoutPicture*{\BackgroundPic}
+%%\doublespacing
+\vspace*{2cm}
+%
+
+\begin{title}
+\textbf{\textsf{\Huge Observation of Quantum Jumps in Superconducting Artificial Atoms with a Josephson Parametric Amplifier}}\\
+\end{title}
+
+\vspace*{0.5cm}
+\includegraphics[width=6cm]{chapters/Introduction/figures/LogoGrau.png}
+\vspace*{0.5cm}\\
+
+%
+\large {\textbf{Raffael Rabl}}\\
+\large {February 2018}\\
+\singlespacing
+\vspace{4cm}
+\large {Univ.-Prof. Dr. Gerhard Kirchmair}\\
+University of Innsbruck\\
+%
+\vspace{1.0cm}
+\large Faculty of Mathematics, Computer Science and Physics\\
+\large Institute of Experimental Physics\\
+\large University of Innsbruck
+
+\end{center}
+\end{titlepage}
+
+
+
+
+
+%\newpage
+%\singlespacing
+
+%\newpage 
+%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\thispagestyle{empty}
+%\mbox{}
+%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\thispagestyle{empty}
+% Abstract 
+%_____________________________________________________
+
+%%\input{chapters/Abstract/abstract}
+
+\newpage
+\onehalfspace
+%\thispagestyle{empty}
+
+%_____________________________________________________
+% Inhaltsverzeichnis 
+%____________________________________________________
+
+\pagestyle{empty}
+
+\tableofcontents
+\newpage
+
+%
+%\pagestyle{empty}
+\printnomenclature
+\newpage
+\pagestyle{fancy}
+
+
+\pagenumbering{arabic}
+\fancyhead[RO,LE]{\nouppercase{\leftmark}} % "O" steht für "odd", also ungerade Seiten
+%\fancyhead[EL]{\nouppercase{\rightmark}} % "E" für "even", also gerade Seiten.
+%\fancyhead[R]{\rightmark}%
+\fancyfoot[C]{\thepage}%
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+%_____________________________________________________
+% Inhalt 
+%____________________________________________________
+
+
+% \input{chapters/structure/linear.tex}
+% \input{chapters/structure/mixed.tex}
+
+\input{chapters/list_of_figures.tex}
+
+
+
+%-----------------------------    Chapter   -----------------------------%
+\newpage
+\input{chapters/Introduction/Introduction.tex}
+
+
+%-----------------------------    Chapter   -----------------------------%
+%\newpage
+%\section{Circuit QED}
+%\label{sec:circuit_qed}
+%
+%\subsection{Concepts}
+%\label{subsec:circuit_qed:concepts}
+%\input{chapters/Circuit_QED/Concepts.tex}
+%
+%\subsection{Microwave Cavities as Quantum Systems}
+%\label{subsec:circuit_qed:microwave_cavities}
+%\input{chapters/Circuit_QED/Microwave_Cavities.tex}
+%
+%\subsection{The Transmon}
+%\label{subsec:circuit_qed:the_transmon}
+%\input{chapters/Circuit_QED/The_Transmon.tex}
+%
+%\subsection{Coupled System - A Transmon in a Cavity}
+%\label{subsec:circuit_qed:transmon_in_a_cavity}
+%\input{chapters/Circuit_QED/Coupled_System.tex}
+%
+
+
+%-----------------------------    Chapter   -----------------------------%
+%\newpage
+%\section{Cavity QED}
+%\label{sec:cavity_QED}
+%
+%\subsection{Jaynes-Cummings-Model}
+%\label{subsec:cavity_QED:jaynes-cummings-model}
+%\input{chapters/Cavity_QED/Jaynes-Cummings-Model.tex}
+%
+%\subsection{Dispersive Regime}
+%\label{subsec:cavity_QED:dispersive_regime}
+%\input{chapters/Cavity_QED/Dispersive_Regime.tex}
+%
+
+
+
+
+
+
+%-----------------------------    Chapter   -----------------------------%
+\newpage
+\section{Characterising the System}
+\label{sec:characterizing_the_system}
+
+\subsection{Experimental Setup}
+\label{sec:characterizing_the_system:experimental_setup}
+\input{chapters/Characterizing_the_System/Experimental_Setup.tex}
+
+\FloatBarrier
+\subsection{Cavity Spectroscopy}
+\label{sec:characterizing_the_system:cavity_spectroscopy}
+\input{chapters/Characterizing_the_System/Cavity_Spectroscopy.tex}
+\FloatBarrier
+
+
+\subsection{Summary of System Parameters}
+\label{sec:characterizing_the_system:summary_of_experimental_params}
+\input{chapters/Characterizing_the_System/Summary_of_System_Parameters.tex}
+
+
+
+
+
+%-----------------------------    Chapter   -----------------------------%
+\newpage
+\section{Cranking up the Contrast: The Josephson Parametric Amplifier}
+
+\subsection{Travelling Quantum Signals}
+
+\subsection{Operational Principle}
+
+\subsubsection{The Josephson Ring Modulator}
+
+\subsubsection{A Chain of Amplifiers}
+
+\subsection{Tuning Procedure}
+\label{sec:jpc:tuning_procedure}
+\input{chapters/JPC/Tuning_Procedure.tex}
+
+
+\FloatBarrier
+\subsection{Testing the JPC SN004}
+\label{sec:jpc:testing_the_SN004}
+\input{chapters/JPC/Testing_the_SN004.tex}
+
+
+
+
+%-----------------------------    Chapter   -----------------------------%
+\newpage
+\section{Observing Quantum Jumps}
+
+\subsection{Heterodyne Detection Setup}
+\label{sec:quantum_jumps:heterodyne_detection_setup}
+\input{chapters/Observing_Quantum_Jumps/Heterodyne_Detection_Scheme.tex}
+\FloatBarrier
+
+
+
+\subsection{Resolving Quantum States in the IQ-Plane}
+\label{sec:quantum_jumps:resolving_quantum_states_in_the_iq_plane}
+\input{chapters/Observing_Quantum_Jumps/Resolving_Quantum_States_in_the_IQ_Plane.tex}
+\FloatBarrier
+
+
+\subsection{Improving the Contrast}
+\label{sec:quantum_jumps:improving_the_contrast}
+\input{chapters/Observing_Quantum_Jumps/Improving_the_Contrast.tex}
+\FloatBarrier
+
+\subsection{Monitoring the State in Time}
+\label{sec:quantum_jumps:monitoring_the_state_in_time}
+\input{chapters/Observing_Quantum_Jumps/Monitoring_the_state_in_time.tex}
+\FloatBarrier
+
+\subsection{Distinguishing three Levels}
+\subsubsection{Is the Distribution Thermal?}
+\subsection{The Next Step: Pulsed Measurements}
+\FloatBarrier
+
+
+
+
+
+\newpage
+\section{Conclusion \& Outlook}
+
+
+\fancyhf{}
+\thispagestyle{empty}
+
+
+
+%-----------------------------    Appendix   -----------------------------%
+\newpage
+\begin{appendices}
+
+
+\section{Eccosorb Filters}
+
+\section{\textit{C++} code for digital IQ demodulation}
+Contents...
+
+
+\end{appendices}
+%-----------------------------    Appendix   -----------------------------%
+
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{literature}
+
+\newpage
+%\\printbibliography[title=Quellenverzeichnis]
+
+
+
+%\includepdf{eidesstattlicheerklaerung.pdf}
+
+
+
+
+
+
+\end{document}

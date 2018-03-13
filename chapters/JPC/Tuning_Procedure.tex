@@ -1,0 +1,70 @@
+\subsubsection{Fluxmaps}
+
+
+
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{8.6cm}
+        \includegraphics[width=\textwidth]{plots/jpc/fluxmaps/quantumcircuits_signal.pdf}
+        \caption{A gull}
+        \label{fig:jpc:fluxmaps:reference:signal_resonator}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{8.6cm}
+        \includegraphics[width=\textwidth]{plots/jpc/fluxmaps/quantumcircuits_idler.pdf}
+        \caption{A tiger}
+        \label{fig:jpc:fluxmaps:reference:idler_resonator}
+    \end{subfigure}
+    \caption{Pictures of animals}\label{fig:jpc:fluxmaps:reference:main}
+\end{figure}
+
+
+
+\begin{figure}[htb!]
+    \centering
+        \includegraphics[width=8.6cm]{plots/jpc/fluxmaps/measured_fluxmap_full_range.pdf}
+        \caption{Measured Fluxmap of the JPC SN004.}
+        \label{fig:jpc:fluxmaps:measured_signal_resonator}
+\end{figure}
+
+
+
+
+
+
+\FloatBarrier
+\subsubsection{Controlling the Gain}
+
+
+
+
+\begin{figure}
+\centering
+\subcaptionbox{
+Phase response of the signal reflected by the JPC signal resonator for three different bias currents while the pump is off.
+\label{fig:jpc:tuning:signal_phase_response}}
+[8.6cm]{\includegraphics[width=8.6cm]{plots/jpc/tuning/signal_resonator_phase_response.pdf}}
+~
+\subcaptionbox{
+Magnitude of the reflected signal for the same bias current as in (\subref{fig:jpc:tuning:signal_phase_response}) with pump tuned accordingly, to produce a gain. The dips in the data are due to qubits in the waveguide.
+\label{fig:jpc:tuning:gain_over_the_whole_range}}
+[8.6cm]{\includegraphics[width=8.6cm]{plots/jpc/tuning/gain_curve_sweep.pdf}}
+\caption{Controlling the position of the central JPC gain frequency. The signal-resonator is tuned via the bias current until it covers the desired frequency (a). Then the JPC-pump is turned on and its power is carefully increased (a). The gain should be visible in transmission if the frequency matching condition $\omega_\text{S} + \omega_\text{I} = \omega_\text{P}$ is fulfilled. If no gain appears, the pump has to be set to a slightly different frequency with its power again slowly swept from low to high. A decent guess for $\omega_\text{P}$ can be obtained from the provided reference fluxmaps \ref{fig:jpc:fluxmaps:reference:main} for the signal and idler resonator of the JPC.}
+\label{fig:jpc:tuning:main}
+\end{figure}
+
+
+
+\begin{figure}
+\centering
+{\includegraphics[width=8.6cm]{plots/jpc/tuning/gain_sweep.pdf}}
+\caption{Gain curve of the JPC for different pump powers.
+}
+\label{fig:jpc:tuning:low_gain_to_high_gain}
+\end{figure}
+
+
+
+
